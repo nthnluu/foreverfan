@@ -1,16 +1,15 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    @apply text-white bg-neutral-900 h-full;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+    @apply h-full;
 }
 
-* {
-  box-sizing: border-box;
+.hover-fade {
+    @apply hover:opacity-80 transition-opacity duration-150;
 }
