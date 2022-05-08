@@ -27,7 +27,7 @@ const useReleases = (): [Release[] | undefined, boolean] => {
                 upc: "1234544-44442"
             }]);
             setLoading(false);
-        }, 1000);
+        }, 500);
     }, []);
 
     return [data, loading];
